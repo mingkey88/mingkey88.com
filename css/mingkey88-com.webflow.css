@@ -1,7 +1,7 @@
 :root {
   --color--second-color: #FAFAFA;
   --font--primary-font: "DM Sans", sans-serif;
-  --colors--fourth-color: #3D3D3D;
+  --colors--fourth-color: #1a1a1a;
   --button--nav-text: 1.1rem;
   --line-height--page-line-height: 1.1;
   --font-weight--500: 500;
@@ -15,7 +15,7 @@
   --colors--second-color: #F5F5F5;
   --button--button-color: #C0392B;
   --font-weight--400: 400;
-  --colors--first-color: #3D3D3D;
+  --colors--first-color: #1a1a1a;
   --page-container--width: 100%;
   --page-container--container-large: 1300px;
   --page-margin--divider-large: 60px;
@@ -23,13 +23,13 @@
   --page-margin--divider-small: 20px;
   --backdrop-filter--blur-color: rgba(61, 61, 61, 0.08);
   --backdrop-filter--backdrop-size: 40px;
-  --color--first-color: #3D3D3D;
+  --color--first-color: #1a1a1a;
   --page-margin--divider-medium: 50px;
   --button--font-size: 14px;
   --page-margin--margin-100px\<deleted\|variable-cf05ab6e-af2d-3706-c5d9-acfd3ea83e39\>: 100px;
   --line-height--page-line-height-2: .85;
   --font-weight--600: 600;
-  --colors--third-color: rgba(61, 61, 61, 0.5);
+  --colors--third-color: rgba(26, 26, 26, 0.5);
   --main-title: 17rem;
   --page-margin--margin-80px\<deleted\|variable-b2b76a9d-e8da-0265-5d54-07b10f53a9ca\>: 80px;
   --button--round-corners: 3rem;
@@ -3011,6 +3011,23 @@ blockquote {
   #w-node-_430377ad-3499-b0a3-857b-a4511ae5d416-1ae5d3e9 {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
+}
+
+/* ============================================
+   VISUAL REFRESH OVERRIDES — 2026-04-13
+   Light base, bold typography, dot grid texture,
+   geometric watermarks, crimson/teal accents.
+   ============================================ */
+
+/* --- Dot grid texture (applied per-section) --- */
+.dot-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 
