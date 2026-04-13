@@ -3105,6 +3105,7 @@ blockquote {
   line-height: 1.5;
   font-weight: 400;
   margin-top: 20px;
+  text-align: center;
 }
 
 /* Hero skill labels */
@@ -3112,6 +3113,7 @@ blockquote {
   display: flex;
   gap: 12px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .hero-skills .skill-label {
