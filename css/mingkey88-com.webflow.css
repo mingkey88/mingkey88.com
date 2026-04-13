@@ -3240,6 +3240,12 @@ blockquote {
 }
 
 
+/* --- Work page hero (top-hero) → light --- */
+.top-hero {
+  background-color: #FAFAFA;
+  color: #1a1a1a;
+}
+
 /* --- Profile photo section --- */
 .section-photo.video {
   position: relative;
