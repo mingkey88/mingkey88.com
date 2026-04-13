@@ -3041,6 +3041,25 @@ blockquote {
   z-index: 10000;
 }
 
+/* --- Global text color fixes for light backgrounds --- */
+a {
+  color: #1a1a1a;
+}
+
+.button {
+  color: #FAFAFA;
+  background-color: #1a1a1a;
+}
+
+.button-text {
+  color: #1a1a1a;
+}
+
+.subhead,
+.caption.margined {
+  color: #1a1a1a;
+}
+
 /* --- Hero: light background --- */
 .hero {
   background-color: #f5f3f0;
