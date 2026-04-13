@@ -3136,3 +3136,45 @@ blockquote {
   border-bottom: 1px solid #bbb;
 }
 
+/* --- About / Experience section --- */
+.section.gray {
+  position: relative;
+}
+
+/* Geometric watermark on about section */
+.section.gray::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #C0392B, #e74c3c);
+  border-radius: 16px;
+  transform: rotate(15deg);
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Bolder section headings */
+.section.gray .page-title.flex.third {
+  font-weight: 800;
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+.section.gray .page-title.flex.second {
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+/* Crimson company names */
+.company-name {
+  color: #C0392B;
+}
+
+/* Subtler divider lines */
+.line-divider-award .line-absolute {
+  opacity: 0.4;
+}
+
