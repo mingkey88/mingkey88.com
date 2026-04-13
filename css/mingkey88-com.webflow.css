@@ -3178,3 +3178,36 @@ blockquote {
   opacity: 0.4;
 }
 
+/* --- Project cards section: dark → light --- */
+.section:not(.gray):not(.with-work-page):not(.with-utility) {
+  background-color: #FAFAFA;
+  color: #1a1a1a;
+}
+
+.section:not(.gray) .page-title.flex {
+  color: #1a1a1a;
+  font-weight: 800;
+}
+
+.section:not(.gray) .page-title.flex .small {
+  color: #999;
+  font-weight: 400;
+}
+
+.project-photo._01 {
+  border-radius: 8px;
+}
+
+.project-small-title.biger {
+  color: #1a1a1a;
+}
+
+.project-small-title.lighter {
+  color: #999;
+}
+
+/* Page divider visibility on light bg */
+.page-divider {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
