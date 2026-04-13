@@ -3146,11 +3146,11 @@ a {
   50% { opacity: 0; }
 }
 
-/* Hero skill labels */
+/* Hero skill buttons */
 .hero-skills {
   display: flex;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 24px;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -3161,25 +3161,43 @@ a {
 }
 
 .hero-skills .skill-label {
-  font-size: 11px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 3px;
   font-weight: 600;
-  padding-bottom: 2px;
+  padding: 10px 24px;
+  border-radius: 3rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .hero-skills .skill-label.dev {
   color: #C0392B;
-  border-bottom: 1px solid #C0392B;
+  border: 1.5px solid #C0392B;
+}
+
+.hero-skills .skill-label.dev:hover {
+  background-color: #C0392B;
+  color: #fff;
 }
 
 .hero-skills .skill-label.art {
   color: #2A9D8F;
-  border-bottom: 1px solid #2A9D8F;
+  border: 1.5px solid #2A9D8F;
+}
+
+.hero-skills .skill-label.art:hover {
+  background-color: #2A9D8F;
+  color: #fff;
 }
 
 .hero-skills .skill-label.motion {
-  color: #999;
-  border-bottom: 1px solid #bbb;
+  color: #666;
+  border: 1.5px solid #bbb;
+}
+
+.hero-skills .skill-label.motion:hover {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 /* --- About / Experience section --- */
@@ -3355,12 +3373,13 @@ a {
 
 @media screen and (max-width: 479px) {
   .hero-skills {
-    gap: 8px;
+    gap: 10px;
   }
 
   .hero-skills .skill-label {
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 8px 18px;
   }
 
   .happy-face-hero._130px {
