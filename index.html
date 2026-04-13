@@ -117,7 +117,7 @@
           <span class="title-1 hide" aria-hidden="true">Stack</span>
           <div class="heading-overlay-2"></div>
         </div>
-        <p class="hero-tagline">Creative technologist building at the intersection of design and code. Full-stack dev, CG artist, and motion designer based in Singapore.</p>
+        <p class="hero-tagline" data-typing="Creative technologist building at the intersection of design and code. Full-stack dev, CG artist, and motion designer based in Singapore."></p>
         <div class="hero-skills">
           <span class="skill-label dev">DEV</span>
           <span class="skill-label art">ART</span>
@@ -590,6 +590,7 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      // Scroll reveal
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
@@ -601,6 +602,27 @@
       document.querySelectorAll(".scroll-reveal").forEach(function (el) {
         observer.observe(el);
       });
+
+      // Typing animation
+      var tagline = document.querySelector(".hero-tagline[data-typing]");
+      if (tagline) {
+        var text = tagline.getAttribute("data-typing");
+        var i = 0;
+        tagline.classList.add("typing");
+        function typeChar() {
+          if (i < text.length) {
+            tagline.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeChar, 30);
+          } else {
+            tagline.classList.remove("typing");
+            tagline.classList.add("done");
+            var skills = document.querySelector(".hero-skills");
+            if (skills) skills.classList.add("visible");
+          }
+        }
+        setTimeout(typeChar, 800);
+      }
     });
   </script>
 </body>

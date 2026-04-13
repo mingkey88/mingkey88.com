@@ -3116,7 +3116,7 @@ a {
   opacity: 0.85;
 }
 
-/* Hero tagline */
+/* Hero tagline with typing animation */
 .hero-tagline {
   font-size: 1rem;
   color: rgba(0,0,0,0.5);
@@ -3126,6 +3126,24 @@ a {
   margin-top: 20px;
   text-align: center;
   align-self: center;
+  min-height: 3em;
+}
+
+.hero-tagline.typing::after {
+  content: "|";
+  color: #C0392B;
+  font-weight: 300;
+  animation: blink-cursor 0.7s step-end infinite;
+  margin-left: 1px;
+}
+
+.hero-tagline.done::after {
+  display: none;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* Hero skill labels */
@@ -3134,6 +3152,12 @@ a {
   gap: 12px;
   margin-top: 20px;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hero-skills.visible {
+  opacity: 1;
 }
 
 .hero-skills .skill-label {
