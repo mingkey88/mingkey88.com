@@ -3106,6 +3106,7 @@ blockquote {
   font-weight: 400;
   margin-top: 20px;
   text-align: center;
+  align-self: center;
 }
 
 /* Hero skill labels */
