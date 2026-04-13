@@ -3239,3 +3239,41 @@ blockquote {
   background-color: #2A9D8F;
 }
 
+
+/* --- Profile photo section --- */
+.section-photo.video {
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+/* --- Footer --- */
+.footer-main {
+  position: relative;
+}
+
+.footer-main .page-title.flex.second {
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.footer-main .page-title.flex.third {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: #999;
+  opacity: 1;
+}
+
+/* Footer geometric watermark */
+.footer-main::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #2A9D8F, #45b7aa);
+  border-radius: 50%;
+  opacity: 0.04;
+  pointer-events: none;
+}
