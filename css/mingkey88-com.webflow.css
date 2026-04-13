@@ -3211,3 +3211,31 @@ blockquote {
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
+/* --- Skills banner: dark → light --- */
+.section-cta.for-services {
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.text-rotator-big.for-services {
+  color: #1a1a1a;
+}
+
+/* Colored dot separators replace happy-face circles */
+.happy-face-hero._130px {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.text-rotator-content:first-child .happy-face-hero._130px {
+  background-color: #C0392B;
+}
+
+.text-rotator-content:last-child .happy-face-hero._130px {
+  background-color: #2A9D8F;
+}
+
